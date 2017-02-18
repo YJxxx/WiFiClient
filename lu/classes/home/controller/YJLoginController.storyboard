@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FKP-Ih-BC2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="F3M-Eo-m2R">
+            <objects>
+                <viewController id="FKP-Ih-BC2" customClass="YJLoginController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aQ3-zw-1D0"/>
+                        <viewControllerLayoutGuide type="bottom" id="huR-Px-4eZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Pn-R1-6xp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login" translatesAutoresizingMaskIntoConstraints="NO" id="GD2-rR-f5j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vn-5c-AbH">
+                                <rect key="frame" x="175" y="283.5" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cga-YX-V4S"/>
+                                    <constraint firstAttribute="width" constant="100" id="faB-yB-0Ay"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="homeBtn:" destination="FKP-Ih-BC2" eventType="touchUpInside" id="EAw-dF-KfL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS0-x8-qmu">
+                                <rect key="frame" x="100" y="283" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gUz-LP-mht"/>
+                                    <constraint firstAttribute="height" constant="100" id="gpM-P3-8Ms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <state key="normal" title="set"/>
+                                <connections>
+                                    <action selector="settingBtn:" destination="FKP-Ih-BC2" eventType="touchUpInside" id="oJn-LW-uPd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nS0-x8-qmu" firstAttribute="centerY" secondItem="5Pn-R1-6xp" secondAttribute="centerY" id="6Mb-pQ-Afo"/>
+                            <constraint firstItem="7vn-5c-AbH" firstAttribute="centerY" secondItem="5Pn-R1-6xp" secondAttribute="centerY" id="Gh7-dU-G2Q"/>
+                            <constraint firstItem="huR-Px-4eZ" firstAttribute="top" secondItem="GD2-rR-f5j" secondAttribute="bottom" id="Jeu-1Y-f2T"/>
+                            <constraint firstAttribute="trailing" secondItem="GD2-rR-f5j" secondAttribute="trailing" id="K02-KZ-rHV"/>
+                            <constraint firstItem="GD2-rR-f5j" firstAttribute="top" secondItem="5Pn-R1-6xp" secondAttribute="top" id="bec-a9-Xst"/>
+                            <constraint firstItem="GD2-rR-f5j" firstAttribute="leading" secondItem="5Pn-R1-6xp" secondAttribute="leading" id="co2-cF-rHh"/>
+                            <constraint firstItem="nS0-x8-qmu" firstAttribute="leading" secondItem="5Pn-R1-6xp" secondAttribute="leading" constant="100" id="mCM-0k-93v"/>
+                            <constraint firstAttribute="trailing" secondItem="7vn-5c-AbH" secondAttribute="trailing" constant="100" id="sTp-Jk-LAz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYS-Er-9qO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="15.742128935532236"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Login" width="2560" height="1440"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="I92-fr-yzr">
+            <objects>
+                <viewController storyboardIdentifier="homeStoryboard" id="gy8-Rx-Bmf" customClass="YJHomeController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wAz-tB-rHd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Ob-2y-kKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jX5-MH-qK3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dPm-bR-W0t">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-dR-3Q5">
+                                <rect key="frame" x="16" y="617" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9h8-gy-1fM"/>
+                                    <constraint firstAttribute="width" constant="50" id="TDz-3I-txQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="back:" destination="gy8-Rx-Bmf" eventType="touchUpInside" id="OIO-yx-biM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dPm-bR-W0t" secondAttribute="bottom" id="59z-8y-bbD"/>
+                            <constraint firstAttribute="trailing" secondItem="dPm-bR-W0t" secondAttribute="trailing" id="fB4-fJ-WqR"/>
+                            <constraint firstItem="RM5-dR-3Q5" firstAttribute="leading" secondItem="jX5-MH-qK3" secondAttribute="leadingMargin" id="gPs-jM-EHb"/>
+                            <constraint firstItem="2Ob-2y-kKT" firstAttribute="top" secondItem="RM5-dR-3Q5" secondAttribute="bottom" id="hNm-bV-SW9"/>
+                            <constraint firstItem="dPm-bR-W0t" firstAttribute="leading" secondItem="jX5-MH-qK3" secondAttribute="leading" id="nkB-Du-CJb"/>
+                            <constraint firstItem="dPm-bR-W0t" firstAttribute="top" secondItem="jX5-MH-qK3" secondAttribute="top" id="zSl-vH-vXA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="dPm-bR-W0t" id="EXu-TW-qEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIR-Sg-JRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="-398"/>
+        </scene>
+    </scenes>
+</document>
